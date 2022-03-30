@@ -99,21 +99,25 @@ body {
   max-height: 60vh;
   flex-direction: row;
   max-width: 40vw;
+  overflow:auto;
 }
 h2{
   font-family: 'Source Sans Pro', sans-serif;
-  color:slategrey;
+  color:black;
   font-size: 1.6vw;
   padding: 0px;
+  padding-bottom: 2vh;
   margin: 0px;
   text-align: center;
 }
 .left{
   width: 45%;
+  float: left;
 }
 .movie-poster{
+  margin-top: 3vh;
   max-height: 40vh;
-  max-width: 800px;
+  max-width: 200px;
   width: 15vw;
   align-items: flex-start;
   margin: .5vw;
@@ -126,22 +130,27 @@ h2{
   flex-direction:row;
   display: inline;
   font-family: 'Source Sans Pro', sans-serif;
-  width: 40%;
+  width: 55%;
+  float: right;
 }
 .rating{
   display: inline-block;
 }
 h3{
   font-family: 'Source Sans Pro', sans-serif;
-  width: inherit;
   font-size: 1.4vw;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
 }
 .rev-1{
   display:inline-block;
-  width: inherit;
 }
 .yup{
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1vw;
-  max-width: 48%;
+  padding-top: 0px;
+  margin-top: 0px;
+}
+#star{
+  font-size: 1vw;
 }
