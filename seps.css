@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+.wow {
+  width: 100px;
+}
+h1{
+  font-family: 'Boogaloo', cursive;
+  color: #e2e6da;
+  text-align: center;
+  font-size: 60px;
+}
+body {
+  background-color: #b3626c;
+  opacity: 1;
+  background-image: radial-gradient(	#ad9088 1.35px, #b3626c 1.35px);
+  background-size: 27px 27px;
+}
+.wrapper {   
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+      .polaroid {
+        background: #fff;
+        padding: 1rem;
+        -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+        -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, .3); 
+      }
+      .item{
+        max-width: 30%;
+      }
+      .polaroid > img {
+        max-width: 100%;
+        height: auto;
+      }
+      .caption {
+        font-size: 2.5vw;
+        text-align: center;
+        line-height: 2em;
+        font-family: 'Annie Use Your Telescope', cursive;
+      }
+      .item .polaroid:before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        transition: all 0.40s;
+      }
+      .item:nth-of-type(2n+1) {
+        transform: scale(0.8, 0.8) rotate(5deg);
+        transition: all 0.35s;
+      }
+      .item:nth-of-type(2n+1) .polaroid:before {
+        transform: rotate(6deg);
+        height: 20%;
+        width: 47%;
+        bottom: 30px;
+        right: 12px;
+      }
+      .item:nth-of-type(2n+2) {
+        transform: scale(0.8, 0.8) rotate(-5deg);
+        transition: all 0.35s;
+      }
+      .item:nth-of-type(2n+2) .polaroid:before {
+        transform: rotate(-6deg);
+        height: 20%;
+        width: 47%;
+        bottom: 30px;
+        left: 12px;
+      }
+      .item:hover {
+        filter: none;
+        transform: scale(1, 1) rotate(0deg);
+        transition: all 0.40s;
+      }
+      .item:hover .polaroid:before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        transform: rotate(0deg);
+        height: 60%;
+        width: 60%;
+        bottom: 0%;
+        right: 10%;
+        transition: all 0.35s;
+      }
+
+
+.movie-section{
+  margin-left: 2.5vw;
+  margin-right: 2.5vw;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  padding: 2vw;
+  background-color: gainsboro;
+  border-radius: 25px;
+  justify-content: space-evenly;
+  max-height: 60vh;
+  flex-direction: row;
+  max-width: 40vw;
+}
+h2{
+  font-family: 'Source Sans Pro', sans-serif;
+  color:slategrey;
+  font-size: 1.6vw;
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+}
+.left{
+  width: 45%;
+}
+.movie-poster{
+  max-height: 40vh;
+  max-width: 800px;
+  width: 15vw;
+  align-items: flex-start;
+  margin: .5vw;
+  display: inline;
+}
+.checked {
+  color: orange;
+}
+.review{
+  flex-direction:row;
+  display: inline;
+  font-family: 'Source Sans Pro', sans-serif;
+  width: 40%;
+}
+.rating{
+  display: inline-block;
+}
+h3{
+  font-family: 'Source Sans Pro', sans-serif;
+  width: inherit;
+  font-size: 1.4vw;
+}
+.rev-1{
+  display:inline-block;
+  width: inherit;
+}
+.yup{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1vw;
+  max-width: 48%;
+}
