@@ -137,6 +137,7 @@ h2 {
     color: white;
     margin-left: 0px;
     margin-left: 0px;
+    border: 0px;
 }
 .t-black.s-photoGallery img {
     border: 4px solid white;
@@ -146,3 +147,6 @@ h2 {
     display: none;
 }
 
+p{
+    font-family: 'Annie Use Your Telescope';
+}
